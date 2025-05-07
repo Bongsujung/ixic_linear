@@ -132,7 +132,7 @@ btc    = fred_series("CBBTCUSD").loc["2024"]     # 비트코인 USD
 lag1  = target.shift(1).rename("IXIC_LAG1")          # 전일 종가
 lag5 = target.shift(5).rename("IXIC_LAG5")          # 5일 전 종가
 sma5  = target.rolling(5).mean().rename("IXIC_SMA5") # 5일 이동평균
-sma10 = target.rolling(10).mean().rename("IXIC_SMA10")
+sma10 = target.rolling(10).mean().rename("IXIC_SMA10") #10일 이동평균
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 6.  피처 풀 (10개) 결합 → 결측 제거(dropna)
